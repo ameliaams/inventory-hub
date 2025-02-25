@@ -34,9 +34,11 @@
                     </x-slot>
 
                     <x-slot name="content">
+                        @hasrole('admin')
                         <x-dropdown-link :href="route('profile.edit')">
                             {{ __('Profile') }}
                         </x-dropdown-link>
+                        @endhasrole
 
                         <!-- Authentication -->
                         <form method="POST" action="{{ route('logout') }}">
@@ -80,9 +82,11 @@
             </div>
 
             <div class="mt-3 space-y-1">
+                @role('admin')
                 <x-responsive-nav-link :href="route('profile.edit')">
                     {{ __('Profile') }}
                 </x-responsive-nav-link>
+                @endrole
 
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}">
