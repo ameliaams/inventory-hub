@@ -21,6 +21,8 @@
                         <label for="floatingPassword">Password</label>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mb-4">
+                        <div class="form-check">
+                        </div>
                         <a href="">Forgot Password</a>
                     </div>
                     <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Sign In</button>
