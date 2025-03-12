@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -63,7 +63,9 @@
                     <a href="#" class="nav-item nav-link"><i class="fa fa-list me-2"></i>Kategori Produk</a>
                     <a href="#" class="nav-item nav-link"><i class="fa fa-boxes me-2"></i>Produk</a>
                     <a href="#" class="nav-item nav-link"><i class="fa fa-handshake me-2"></i>Transaksi</a>
+                    @role('admin')
                     <a href="#" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Laporan</a>
+                    @endrole
                     <a href="#" class="nav-item nav-link"><i class="fa fa-power-off me-2"></i>Logout</a>
                 </div>
             </nav>
@@ -110,7 +112,7 @@
                 <div class="bg-light rounded-top p-4">
                     <div class="row">
                         <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">Inventory Hub</a>, All Right Reserved. 
+                            &copy; <a href="#">Inventory Hub</a>, All Right Reserved.
                         </div>
                     </div>
                 </div>
